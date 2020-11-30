@@ -234,7 +234,7 @@ func resourceVcdEdgeGateway() *schema.Resource {
 			"external_network": {
 				Description: "One or more blocks with external network information to be attached to this gateway's interface",
 				ForceNew:    true,
-				Required:    true,
+				Optional:    true,
 				Type:        schema.TypeSet,
 				Elem:        externalNetworkResource,
 			},
